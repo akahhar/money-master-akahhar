@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convention Center</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header area start -->
+    <header class="header-area text-center mb-4 mt-4">
+      <h1>Finology - Money Management💰</h1>
+    </header>
+    <!-- Header area end -->
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6">
+              <img
+                src="assets/images/mediamodifier-I3HPUolh5hA-unsplash.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-xl-6">
+              <div class="content text-center bg-gray">
+                <h2>Income</h2>
+
+                <div class="mb-3 row">
+                  <label for="inputIncome" class="col-xl-2 col-4 col-form-label"
+                    >Income:</label
+                  >
+                  <div class="col-xl-10 col-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputIncome"
+                      value="10000"
+                    />
+                  </div>
+                </div>
+                <h2>Expenses</h2>
+                <div class="mb-3 row">
+                  <label for="inputFood" class="col-xl-2 col-4 col-form-label"
+                    >Food:</label
+                  >
+                  <div class="col-xl-10 col-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputFood"
+                      value="3000"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputRent" class="col-xl-2 col-4 col-form-label"
+                    >Rent:</label
+                  >
+                  <div class="col-xl-10 col-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputRent"
+                      value="2000"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label
+                    for="inputClothes"
+                    class="col-xl-2 col-4 col-form-label"
+                    >Clothes:</label
+                  >
+                  <div class="col-xl-10 col-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputClothes"
+                      value="500"
+                    />
+                  </div>
+                </div>
+                <div class="total-area mb-4">
+                  <button class="btn mb-3" id="calculateBtn">Calculate</button>
+                  <h2>Total Expenses: <span id="totalExpenses">00</span></h2>
+                  <h2>Balance: <span id="balance">00</span></h2>
+                </div>
+                <div class="row">
+                  <div class="col-xl-2 col-2 d-flex align-items-center">
+                    <label for="inputSavings" class="col-form-label"
+                      >Save:</label
+                    >
+                  </div>
+                  <div class="col-xl-5 col-5 d-flex align-items-center">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputSavings"
+                        value="20"
+                      />
+                      <div class="input-group-append">
+                        <span class="input-group-text">%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-5 col-5">
+                    <button class="btn" id="saveBtn">Save</button>
+                  </div>
+                </div>
+                <h2 class="mt-4">
+                  Saving Amount: <span id="savingAmount">00</span>
+                </h2>
+                <h2>
+                  Remaining Balance: <span id="remainingBalance">00</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer area start -->
+    <footer></footer>
+
+    <!-- Footer area end -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
