@@ -106,6 +106,7 @@ document.getElementById("saveBtn").addEventListener("click", () => {
         }
                       
       }
+      
     } else {
       document.getElementById("savingAmount").innerText = "00";
       document.getElementById("remainingBalance").innerText = "00";
