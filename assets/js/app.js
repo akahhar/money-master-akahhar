@@ -2,6 +2,7 @@
 function getInputValue(inputId) {
   const input = document.getElementById(inputId);
   // validate input value is a number and not empty string and must be a positive number
+  
   if (input.value === "" || isNaN(input.value) || input.value < 0) {
     errorMessage(inputId, "Please enter a valid number", true);
     return 0;
@@ -11,7 +12,6 @@ function getInputValue(inputId) {
     return parseFloat(input.value);
   }
 }
-
 function errorMessage(id, message, input = false) {
   // append error message to input and append span element
   if (input) {
