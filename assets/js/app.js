@@ -12,6 +12,7 @@ function getInputValue(inputId) {
     return parseFloat(input.value);
   }
 }
+
 function errorMessage(id, message, input = false) {
   // append error message to input and append span element
   if (input) {
